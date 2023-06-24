@@ -2395,6 +2395,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 269143616}
+  - component: {fileID: 269143618}
+  - component: {fileID: 269143617}
   m_Layer: 0
   m_Name: Cage
   m_TagString: Untagged
@@ -2419,6 +2421,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &269143617
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269143615}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.687525, y: 1, z: 7.635641}
+  m_Center: {x: -2.8437624, y: 0, z: -3.3178205}
+--- !u!114 &269143618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269143615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4b11b20ea45894cae907ded2c98dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basePrice: 10
+  currentPriceMultiplier: 0.2
+  animals:
+  - {fileID: 5640294167666490156, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
+  - {fileID: 5640294167666490156, guid: c59d0de062f284a42826b6942133d716, type: 3}
 --- !u!1001 &269718773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9372,6 +9404,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 757301828}
+  - component: {fileID: 757301830}
+  - component: {fileID: 757301829}
   m_Layer: 0
   m_Name: Cage
   m_TagString: Untagged
@@ -9396,6 +9430,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &757301829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757301827}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.687525, y: 1, z: 7.635641}
+  m_Center: {x: -2.8437624, y: 0, z: -3.3178205}
+--- !u!114 &757301830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757301827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4b11b20ea45894cae907ded2c98dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basePrice: 10
+  currentPriceMultiplier: 0.2
+  animals:
+  - {fileID: 5640294167666490156, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
+  - {fileID: 5640294167666490156, guid: c59d0de062f284a42826b6942133d716, type: 3}
 --- !u!1001 &759932810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10733,6 +10797,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 897073986}
+  - component: {fileID: 897073988}
+  - component: {fileID: 897073987}
   m_Layer: 0
   m_Name: Cage
   m_TagString: Untagged
@@ -10757,6 +10823,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &897073987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897073985}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.687525, y: 1, z: 7.635641}
+  m_Center: {x: -2.8437624, y: 0, z: -3.3178205}
+--- !u!114 &897073988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897073985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4b11b20ea45894cae907ded2c98dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basePrice: 10
+  currentPriceMultiplier: 0.2
+  animals:
+  - {fileID: 5640294167666490156, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
+  - {fileID: 5640294167666490156, guid: c59d0de062f284a42826b6942133d716, type: 3}
 --- !u!1001 &897386409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10836,6 +10932,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 897386409}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &898589455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 898589457}
+  - component: {fileID: 898589456}
+  m_Layer: 0
+  m_Name: PlayerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &898589456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898589455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b721a5d4df5f574bbe5363cbe5a9cad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timePerCoinsAdded: 1
+--- !u!4 &898589457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898589455}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.69974, y: 8.874274, z: -0.45230097}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &913492361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11315,6 +11456,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 957403903}
+  - component: {fileID: 957403905}
+  - component: {fileID: 957403904}
   m_Layer: 0
   m_Name: Cage
   m_TagString: Untagged
@@ -11339,6 +11482,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &957403904
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957403902}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.687525, y: 1, z: 7.635641}
+  m_Center: {x: -2.8437624, y: 0, z: -3.3178205}
+--- !u!114 &957403905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957403902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4b11b20ea45894cae907ded2c98dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basePrice: 10
+  currentPriceMultiplier: 0.2
+  animals:
+  - {fileID: 5640294167666490156, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
+  - {fileID: 5640294167666490156, guid: c59d0de062f284a42826b6942133d716, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -11747,7 +11920,7 @@ GameObject:
   - component: {fileID: 1006034889}
   - component: {fileID: 1006034888}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: CoinsForTicketsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11806,7 +11979,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 12.7K
+  m_Text: 0
 --- !u!222 &1006034889
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21790,6 +21963,8 @@ MonoBehaviour:
   yardShopPanel: {fileID: 4511114533812944489}
   yardButton: {fileID: 401193110890951541}
   yardCostText: {fileID: 2508120296579459197}
+  coinsText: {fileID: 2584274620656501375}
+  coinsForTicketsText: {fileID: 1006034888}
 --- !u!4 &2054370244
 Transform:
   m_ObjectHideFlags: 0
@@ -26850,7 +27025,7 @@ GameObject:
   - component: {fileID: 2584274620656501368}
   - component: {fileID: 2584274620656501375}
   m_Layer: 5
-  m_Name: Text
+  m_Name: CoinsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26909,7 +27084,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 12750
+  m_Text: 0
 --- !u!1 &2584274620741098393
 GameObject:
   m_ObjectHideFlags: 0
@@ -35047,7 +35222,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7604624337313985765}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 898589456}
+        m_TargetAssemblyTypeName: PlayerManager, Assembly-CSharp
+        m_MethodName: CollectCoins
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &7604624337313985767
 RectTransform:
   m_ObjectHideFlags: 0
