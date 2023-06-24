@@ -38,6 +38,8 @@ namespace Gameplay
             _currentPrice += _currentPrice * currentPriceMultiplier;
             OnCurrentPriceChanged?.Invoke(_currentPrice);
             
+            PlayerManager.Instance.UpdateTicketPrice();
+            
             _level++;
             SpawnNewAnimalsInYard(_level);
         }

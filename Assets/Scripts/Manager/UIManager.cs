@@ -12,7 +12,24 @@ namespace Manager
         [SerializeField] private Button yardButton;
         [SerializeField] private Text yardCostText;
 
+        [SerializeField] private Text coinsText;
+        [SerializeField] private Text coinsForTicketsText;
+
         private Yard _currentYard;
+
+        private void OnEnable()
+        {
+            PlayerManager playerManager = PlayerManager.Instance;
+            playerManager.OnCoinsChanged += OnCoinsChanged;
+            playerManager.OnCoinsForTicketsChanged += OnCoinsForTicketsChanged;
+        }
+
+        private void OnDisable()
+        {
+            PlayerManager playerManager = PlayerManager.Instance;
+            playerManager.OnCoinsChanged -= OnCoinsChanged;
+            playerManager.OnCoinsForTicketsChanged -= OnCoinsForTicketsChanged;
+        }
 
         public void OpenYardPanel(Yard yard)
         {
@@ -40,6 +57,16 @@ namespace Manager
         private void OnYardCurrentPriceChanged(float value)
         {
             yardCostText.text = value.ToString("0");
+        }
+
+        private void OnCoinsChanged(float value)
+        {
+            coinsText.text = value.ToString("0");
+        }
+        
+        private void OnCoinsForTicketsChanged(float value)
+        {
+            coinsForTicketsText.text = value.ToString("0");
         }
     }
 }
