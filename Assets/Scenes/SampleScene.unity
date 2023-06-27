@@ -2449,8 +2449,9 @@ MonoBehaviour:
   basePrice: 10
   currentPriceMultiplier: 0.2
   animals:
-  - {fileID: 5640294167666490156, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
-  - {fileID: 5640294167666490156, guid: c59d0de062f284a42826b6942133d716, type: 3}
+  - {fileID: -5568155355655160535, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
+  - {fileID: 8242000150665320922, guid: c59d0de062f284a42826b6942133d716, type: 3}
+  _level: 1
 --- !u!1001 &269718773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9458,8 +9459,9 @@ MonoBehaviour:
   basePrice: 10
   currentPriceMultiplier: 0.2
   animals:
-  - {fileID: 5640294167666490156, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
-  - {fileID: 5640294167666490156, guid: c59d0de062f284a42826b6942133d716, type: 3}
+  - {fileID: -5568155355655160535, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
+  - {fileID: 8242000150665320922, guid: c59d0de062f284a42826b6942133d716, type: 3}
+  _level: 1
 --- !u!1001 &759932810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10851,8 +10853,9 @@ MonoBehaviour:
   basePrice: 10
   currentPriceMultiplier: 0.2
   animals:
-  - {fileID: 5640294167666490156, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
-  - {fileID: 5640294167666490156, guid: c59d0de062f284a42826b6942133d716, type: 3}
+  - {fileID: -5568155355655160535, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
+  - {fileID: 8242000150665320922, guid: c59d0de062f284a42826b6942133d716, type: 3}
+  _level: 1
 --- !u!1001 &897386409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10962,6 +10965,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timePerCoinsAdded: 1
+  _ticketPrice: 10
+  _ticketPriceMultiplier: 0.1
 --- !u!4 &898589457
 Transform:
   m_ObjectHideFlags: 0
@@ -11510,8 +11515,9 @@ MonoBehaviour:
   basePrice: 10
   currentPriceMultiplier: 0.2
   animals:
-  - {fileID: 5640294167666490156, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
-  - {fileID: 5640294167666490156, guid: c59d0de062f284a42826b6942133d716, type: 3}
+  - {fileID: -5568155355655160535, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
+  - {fileID: 8242000150665320922, guid: c59d0de062f284a42826b6942133d716, type: 3}
+  _level: 1
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -12941,8 +12947,9 @@ MonoBehaviour:
   basePrice: 10
   currentPriceMultiplier: 0.2
   animals:
-  - {fileID: 5640294167666490156, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
-  - {fileID: 5640294167666490156, guid: c59d0de062f284a42826b6942133d716, type: 3}
+  - {fileID: -5568155355655160535, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
+  - {fileID: 8242000150665320922, guid: c59d0de062f284a42826b6942133d716, type: 3}
+  _level: 1
 --- !u!65 &1166655091
 BoxCollider:
   m_ObjectHideFlags: 0

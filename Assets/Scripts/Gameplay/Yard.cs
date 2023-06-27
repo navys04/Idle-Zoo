@@ -10,10 +10,10 @@ namespace Gameplay
     {
         [SerializeField] private float basePrice = 10.0f;
         [SerializeField] private float currentPriceMultiplier = 0.2f;
-        [SerializeField] private List<GameObject> animals = new List<GameObject>();
+        [SerializeField] private List<Animal> animals = new List<Animal>();
     
         private float _currentPrice;
-        private int _level = 1;
+        [SerializeField] private int _level = 1;
 
         private GameObject _currentYard;
 
@@ -46,14 +46,33 @@ namespace Gameplay
 
         private void SpawnNewAnimalsInYard(int level)
         {
-            if (level > animals.Count) return;
+           // if (level > animals.Count) return;
 
+            int curAnimalLevel;
+
+            Animal newAnimal = GetAnimalByLevel(level);
             if (_currentYard)
             {
+                Animal animal = _currentYard.GetComponent<Animal>();
+                curAnimalLevel = animal.level;
+                
+                if (newAnimal == null) return;
+                
                 Destroy(_currentYard);
             }
+            
+            if (!newAnimal) return;
+            _currentYard = Instantiate(newAnimal.gameObject, transform.position, transform.rotation, transform);
+        }
 
-            _currentYard = Instantiate(animals[level - 1], transform.position, transform.rotation, transform);
+        public Animal GetAnimalByLevel(int level)
+        {
+            foreach (var zoo in animals)
+            {
+                if (zoo.level == level) return zoo;
+            }
+
+            return null;
         }
     }
 }
