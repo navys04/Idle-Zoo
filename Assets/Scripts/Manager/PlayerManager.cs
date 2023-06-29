@@ -21,7 +21,7 @@ public class PlayerManager : SingletonBase<PlayerManager>
 
     private void Start()
     {
-        StartCoroutine(UpdateCoinsForTickets());
+       // StartCoroutine(UpdateCoinsForTickets());
     }
 
     private IEnumerator UpdateCoinsForTickets()
