@@ -1,11 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Gameplay;
 using UnityEngine;
 
 public class PlayerManager : SingletonBase<PlayerManager>
 {
     [SerializeField] private float timePerCoinsAdded = 1.0f;
+
+    [SerializeField] private List<Yard> yards;
     
     private float _coins;
     public float GetCoins() => _coins;
@@ -21,7 +24,9 @@ public class PlayerManager : SingletonBase<PlayerManager>
 
     private void Start()
     {
-       // StartCoroutine(UpdateCoinsForTickets());
+        _ticketPrice = 0;
+        
+        UpdateTicketPrice();
     }
 
     private IEnumerator UpdateCoinsForTickets()
@@ -47,7 +52,14 @@ public class PlayerManager : SingletonBase<PlayerManager>
 
     public void UpdateTicketPrice()
     {
-        _ticketPrice += _ticketPrice * _ticketPriceMultiplier;
+        _ticketPrice = 0;
+        
+        yards.ForEach(yard =>
+        {
+            _ticketPrice += yard.GetCurrentTicketPrice();
+        });
+        
+        print(_ticketPrice);
     }
 
     public void CollectCoins()

@@ -8,22 +8,44 @@ namespace Gameplay
 {
     public class Yard : MonoBehaviour
     {
+        [Header("Price")]
         [SerializeField] private float basePrice = 10.0f;
         [SerializeField] private float currentPriceMultiplier = 0.2f;
+
+        [Header("TicketPrice")] 
+        [SerializeField] private float baseTicketPrice = 10.0f;
+        [SerializeField] private float ticketPriceMultiplier = 0.2f;
+        private float _ticketPrice;
+        
+        [Header("Yard Settings")]
         [SerializeField] private List<Animal> animals = new List<Animal>();
-    
+        
         private float _currentPrice;
         [SerializeField] private int _level = 1;
 
+        [Header("UI")] 
+        [SerializeField] private Sprite yardIcon;
+
         private GameObject _currentYard;
 
+        public int GetLevel() => _level;
+        
         public float GetCurrentPrice() => _currentPrice;
+        public float GetCurrentTicketPrice() => _ticketPrice;
+        public Sprite GetYardIcon() => yardIcon;
 
         public Action<float> OnCurrentPriceChanged = delegate(float f) {  };
+        public Action<float> OnCurrentTicketPriceChanged = delegate(float f) {  };
 
+        public List<Animal> GetAnimals() => animals;
+
+        private int _currentAnimalIndex;
+        public int GetCurrentAnimalIndex() => _currentAnimalIndex;
+        
         private void Start()
         {
             _currentPrice = basePrice;
+            _ticketPrice = baseTicketPrice;
             
             SpawnNewAnimalsInYard(_level);
         }
@@ -37,7 +59,9 @@ namespace Gameplay
         {
             _currentPrice += _currentPrice * currentPriceMultiplier;
             OnCurrentPriceChanged?.Invoke(_currentPrice);
-            
+
+            _ticketPrice += (_ticketPrice * ticketPriceMultiplier);
+            OnCurrentTicketPriceChanged?.Invoke(_ticketPrice);
             PlayerManager.Instance.UpdateTicketPrice();
             
             _level++;
@@ -63,16 +87,14 @@ namespace Gameplay
             
             if (!newAnimal) return;
             _currentYard = Instantiate(newAnimal.gameObject, transform.position, transform.rotation, transform);
+
+            _currentAnimalIndex = animals.IndexOf(newAnimal);
+            print(_currentAnimalIndex);
         }
 
         public Animal GetAnimalByLevel(int level)
         {
-            foreach (var zoo in animals)
-            {
-                if (zoo.level == level) return zoo;
-            }
-
-            return null;
+            return animals.Find(animal => animal.level == level);
         }
     }
 }

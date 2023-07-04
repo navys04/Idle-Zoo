@@ -8,9 +8,7 @@ namespace Manager
     public class UIManager : SingletonBase<UIManager>
     {
         [Header("Yard")]
-        [SerializeField] private GameObject yardShopPanel;
-        [SerializeField] private Button yardButton;
-        [SerializeField] private Text yardCostText;
+        [SerializeField] private YardPanel yardShopPanel;
 
         [SerializeField] private Text coinsText;
         [SerializeField] private Text coinsForTicketsText;
@@ -35,16 +33,21 @@ namespace Manager
         {
             _currentYard = yard;
 
-            yardCostText.text = yard.GetCurrentPrice().ToString("0");
+            yardShopPanel.yardCostText.text = yard.GetCurrentPrice().ToString("0");
+            yardShopPanel.yardIcon.sprite = yard.GetYardIcon();
             _currentYard.OnCurrentPriceChanged += OnYardCurrentPriceChanged;
-            
-            yardShopPanel.SetActive(true);
+            _currentYard.OnCurrentTicketPriceChanged += OnCurrentYardTicketPriceChanged;
+            yardShopPanel.ticketCostText.text = yard.GetCurrentTicketPrice().ToString("0");
+
+            yardShopPanel.gameObject.SetActive(true);
+            yardShopPanel.UpdateLevelOnYard(yard);
         }
 
         public void CloseYardPanel()
         {
             _currentYard.OnCurrentPriceChanged -= OnYardCurrentPriceChanged;
-            yardShopPanel.SetActive(false);
+            _currentYard.OnCurrentTicketPriceChanged -= OnCurrentYardTicketPriceChanged;
+            yardShopPanel.gameObject.SetActive(false);
         }
 
         public void TryUpdateYard()
@@ -52,11 +55,17 @@ namespace Manager
             if (!_currentYard) return;
         
             _currentYard.UpdateYard();
+            yardShopPanel.UpdateLevelOnYard(_currentYard);
         }
 
         private void OnYardCurrentPriceChanged(float value)
         {
-            yardCostText.text = value.ToString("0");
+            yardShopPanel.yardCostText.text = value.ToString("0");
+        }
+
+        private void OnCurrentYardTicketPriceChanged(float value)
+        {
+            yardShopPanel.ticketCostText.text = value.ToString("0");
         }
 
         private void OnCoinsChanged(float value)
