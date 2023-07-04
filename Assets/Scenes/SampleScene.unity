@@ -2650,10 +2650,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basePrice: 10
   currentPriceMultiplier: 0.2
+  baseTicketPrice: 10
+  ticketPriceMultiplier: 0.1
   animals:
   - {fileID: -5568155355655160535, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
   - {fileID: 8242000150665320922, guid: c59d0de062f284a42826b6942133d716, type: 3}
   _level: 1
+  yardIcon: {fileID: 21300000, guid: 855cc301076a4af43bbacb8768d568c4, type: 3}
 --- !u!1001 &269718773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10248,10 +10251,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basePrice: 10
   currentPriceMultiplier: 0.2
+  baseTicketPrice: 10
+  ticketPriceMultiplier: 0.1
   animals:
-  - {fileID: -5568155355655160535, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
-  - {fileID: 8242000150665320922, guid: c59d0de062f284a42826b6942133d716, type: 3}
+  - {fileID: -5568155355655160535, guid: 56248213d8c46494ab75e83dee7358a6, type: 3}
+  - {fileID: -5568155355655160535, guid: 5c0ba647d0e608f42a054a00493bb543, type: 3}
   _level: 1
+  yardIcon: {fileID: 21300000, guid: 855cc301076a4af43bbacb8768d568c4, type: 3}
 --- !u!1001 &759932810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11769,10 +11775,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basePrice: 10
   currentPriceMultiplier: 0.2
+  baseTicketPrice: 10
+  ticketPriceMultiplier: 0.1
   animals:
-  - {fileID: -5568155355655160535, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
-  - {fileID: 8242000150665320922, guid: c59d0de062f284a42826b6942133d716, type: 3}
+  - {fileID: -5568155355655160535, guid: 56248213d8c46494ab75e83dee7358a6, type: 3}
+  - {fileID: -5568155355655160535, guid: 5c0ba647d0e608f42a054a00493bb543, type: 3}
   _level: 1
+  yardIcon: {fileID: 21300000, guid: 855cc301076a4af43bbacb8768d568c4, type: 3}
 --- !u!1001 &897386409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11886,6 +11895,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timePerCoinsAdded: 1
+  yards:
+  - {fileID: 757301830}
+  - {fileID: 1166655090}
+  - {fileID: 957403905}
+  - {fileID: 897073988}
+  - {fileID: 269143618}
   _ticketPrice: 10
   _ticketPriceMultiplier: 0.1
 --- !u!4 &898589457
@@ -12477,10 +12492,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basePrice: 10
   currentPriceMultiplier: 0.2
+  baseTicketPrice: 10
+  ticketPriceMultiplier: 0.1
   animals:
   - {fileID: -5568155355655160535, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
   - {fileID: 8242000150665320922, guid: c59d0de062f284a42826b6942133d716, type: 3}
   _level: 1
+  yardIcon: {fileID: 21300000, guid: 855cc301076a4af43bbacb8768d568c4, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -14014,10 +14032,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basePrice: 10
   currentPriceMultiplier: 0.2
+  baseTicketPrice: 10
+  ticketPriceMultiplier: 0.1
   animals:
-  - {fileID: -5568155355655160535, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
-  - {fileID: 8242000150665320922, guid: c59d0de062f284a42826b6942133d716, type: 3}
+  - {fileID: -5568155355655160535, guid: 56248213d8c46494ab75e83dee7358a6, type: 3}
+  - {fileID: -5568155355655160535, guid: 5c0ba647d0e608f42a054a00493bb543, type: 3}
   _level: 1
+  yardIcon: {fileID: 21300000, guid: 855cc301076a4af43bbacb8768d568c4, type: 3}
 --- !u!65 &1166655091
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18514,7 +18535,7 @@ GameObject:
   - component: {fileID: 1585556149}
   - component: {fileID: 1585556148}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TicketCostText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23868,9 +23889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1023a8cb8b76c24b86f69a3d593fdea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yardShopPanel: {fileID: 4511114533812944489}
-  yardButton: {fileID: 401193110890951541}
-  yardCostText: {fileID: 2508120296579459197}
+  yardShopPanel: {fileID: 4511114533812944490}
   coinsText: {fileID: 2584274620656501375}
   coinsForTicketsText: {fileID: 1006034888}
 --- !u!4 &2054370244
@@ -28240,7 +28259,7 @@ GameObject:
   - component: {fileID: 8162481244566052948}
   - component: {fileID: 8808282704932525456}
   m_Layer: 0
-  m_Name: Text (3)
+  m_Name: LevelText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32851,6 +32870,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4511114533812944488}
+  - component: {fileID: 4511114533812944490}
   m_Layer: 0
   m_Name: Screen Objectives
   m_TagString: Untagged
@@ -32858,6 +32878,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &4511114533812944490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4511114533812944489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b0077d00cfc4de46aa0fe61fa914058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelText: {fileID: 8808282704932525456}
+  fillImage: {fileID: 2004511634068878587}
+  yardButton: {fileID: 401193110890951541}
+  yardIcon: {fileID: 195368364196011872}
+  yardCostText: {fileID: 2508120296579459197}
+  ticketCostText: {fileID: 1585556148}
 --- !u!222 &4511114535100619211
 CanvasRenderer:
   m_ObjectHideFlags: 0
