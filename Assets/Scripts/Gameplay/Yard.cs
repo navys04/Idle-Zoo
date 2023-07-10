@@ -21,10 +21,11 @@ namespace Gameplay
         [SerializeField] private List<Animal> animals = new List<Animal>();
         
         private float _currentPrice;
-        [SerializeField] private int _level = 1;
+        [SerializeField] private int _level = 0;
 
         [Header("UI")] 
         [SerializeField] private Sprite yardIcon;
+        [SerializeField] private string yardTitle;
 
         private GameObject _currentYard;
 
@@ -33,6 +34,7 @@ namespace Gameplay
         public float GetCurrentPrice() => _currentPrice;
         public float GetCurrentTicketPrice() => _ticketPrice;
         public Sprite GetYardIcon() => yardIcon;
+        public string GetYardTitle() => yardTitle;
 
         public Action<float> OnCurrentPriceChanged = delegate(float f) {  };
         public Action<float> OnCurrentTicketPriceChanged = delegate(float f) {  };
@@ -44,10 +46,7 @@ namespace Gameplay
         
         private void Start()
         {
-            _currentPrice = basePrice;
-            _ticketPrice = baseTicketPrice;
-            
-            SpawnNewAnimalsInYard(_level);
+            if (_level > 0) SpawnNewAnimalsInYard(_level);
         }
 
         private void OnMouseDown()
@@ -57,6 +56,20 @@ namespace Gameplay
 
         public void UpdateYard()
         {
+            if (_level == 0)
+            {
+                _currentPrice = basePrice;
+                _ticketPrice = baseTicketPrice;
+                
+                OnCurrentPriceChanged?.Invoke(_currentPrice);
+                OnCurrentTicketPriceChanged?.Invoke(_ticketPrice);
+                PlayerManager.Instance.UpdateTicketPrice();
+                
+                _level++;
+                SpawnNewAnimalsInYard(_level);
+                return;
+            }
+            
             _currentPrice += _currentPrice * currentPriceMultiplier;
             OnCurrentPriceChanged?.Invoke(_currentPrice);
 
@@ -72,7 +85,7 @@ namespace Gameplay
         {
            // if (level > animals.Count) return;
 
-            int curAnimalLevel;
+            int curAnimalLevel = 0;
 
             Animal newAnimal = GetAnimalByLevel(level);
             if (_currentYard)
@@ -95,6 +108,20 @@ namespace Gameplay
         public Animal GetAnimalByLevel(int level)
         {
             return animals.Find(animal => animal.level == level);
+        }
+        
+        public int GetNextLevel()
+        {
+            int currentAnimalIndex = GetCurrentAnimalIndex();
+            int nextAnimalIndex = currentAnimalIndex + 1;
+            if (GetAnimals().Count > nextAnimalIndex)
+            {
+                return GetAnimals()[nextAnimalIndex].level;
+            }
+        
+            print("Animals.Count = " + GetAnimals().Count);
+        
+            return -1;
         }
     }
 }

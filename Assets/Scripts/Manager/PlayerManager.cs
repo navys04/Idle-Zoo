@@ -18,7 +18,7 @@ public class PlayerManager : SingletonBase<PlayerManager>
     public float GetCoinsForTickets() => _coinsForTickets;
     public Action<float> OnCoinsForTicketsChanged = delegate(float f) {  };
 
-    [SerializeField] private float _ticketPrice = 10.0f;
+    [SerializeField] private float _ticketPrice = 0;
     [SerializeField] private float _ticketPriceMultiplier = 0.1f;
     public float GetTicketPrice() => _ticketPrice;
 
@@ -68,5 +68,11 @@ public class PlayerManager : SingletonBase<PlayerManager>
 
         _coinsForTickets = 0;
         OnCoinsForTicketsChanged?.Invoke(_coinsForTickets);
+    }
+
+    public void SubtractCoins(float value)
+    {
+        _coins -= value;
+        OnCoinsChanged?.Invoke(_coins);
     }
 }

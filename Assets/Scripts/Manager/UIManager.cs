@@ -38,6 +38,7 @@ namespace Manager
             _currentYard.OnCurrentPriceChanged += OnYardCurrentPriceChanged;
             _currentYard.OnCurrentTicketPriceChanged += OnCurrentYardTicketPriceChanged;
             yardShopPanel.ticketCostText.text = yard.GetCurrentTicketPrice().ToString("0");
+            yardShopPanel.yardTitle.text = yard.GetYardTitle();
 
             yardShopPanel.gameObject.SetActive(true);
             yardShopPanel.UpdateLevelOnYard(yard);
@@ -53,6 +54,12 @@ namespace Manager
         public void TryUpdateYard()
         {
             if (!_currentYard) return;
+
+            PlayerManager playerManager = PlayerManager.Instance;
+            if (_currentYard.GetCurrentPrice() > playerManager.GetCoins()) return;
+            if (_currentYard.GetNextLevel() == -1) return;
+            
+            playerManager.SubtractCoins(_currentYard.GetCurrentPrice());
         
             _currentYard.UpdateYard();
             yardShopPanel.UpdateLevelOnYard(_currentYard);

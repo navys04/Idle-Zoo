@@ -2655,8 +2655,9 @@ MonoBehaviour:
   animals:
   - {fileID: -5568155355655160535, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
   - {fileID: 8242000150665320922, guid: c59d0de062f284a42826b6942133d716, type: 3}
-  _level: 1
+  _level: 0
   yardIcon: {fileID: 21300000, guid: 855cc301076a4af43bbacb8768d568c4, type: 3}
+  yardTitle: CHICKENS
 --- !u!1001 &269718773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10256,8 +10257,9 @@ MonoBehaviour:
   animals:
   - {fileID: -5568155355655160535, guid: 56248213d8c46494ab75e83dee7358a6, type: 3}
   - {fileID: -5568155355655160535, guid: 5c0ba647d0e608f42a054a00493bb543, type: 3}
-  _level: 1
+  _level: 0
   yardIcon: {fileID: 21300000, guid: 855cc301076a4af43bbacb8768d568c4, type: 3}
+  yardTitle: CHICKENS
 --- !u!1001 &759932810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11780,8 +11782,9 @@ MonoBehaviour:
   animals:
   - {fileID: -5568155355655160535, guid: 56248213d8c46494ab75e83dee7358a6, type: 3}
   - {fileID: -5568155355655160535, guid: 5c0ba647d0e608f42a054a00493bb543, type: 3}
-  _level: 1
+  _level: 0
   yardIcon: {fileID: 21300000, guid: 855cc301076a4af43bbacb8768d568c4, type: 3}
+  yardTitle: CHICKENS
 --- !u!1001 &897386409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11901,7 +11904,7 @@ MonoBehaviour:
   - {fileID: 957403905}
   - {fileID: 897073988}
   - {fileID: 269143618}
-  _ticketPrice: 10
+  _ticketPrice: 0
   _ticketPriceMultiplier: 0.1
 --- !u!4 &898589457
 Transform:
@@ -12497,8 +12500,9 @@ MonoBehaviour:
   animals:
   - {fileID: -5568155355655160535, guid: a506d17f4fb094e4586b2d6cf435edff, type: 3}
   - {fileID: 8242000150665320922, guid: c59d0de062f284a42826b6942133d716, type: 3}
-  _level: 1
+  _level: 0
   yardIcon: {fileID: 21300000, guid: 855cc301076a4af43bbacb8768d568c4, type: 3}
+  yardTitle: CHICKENS
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -14037,8 +14041,9 @@ MonoBehaviour:
   animals:
   - {fileID: -5568155355655160535, guid: 56248213d8c46494ab75e83dee7358a6, type: 3}
   - {fileID: -5568155355655160535, guid: 5c0ba647d0e608f42a054a00493bb543, type: 3}
-  _level: 1
+  _level: 0
   yardIcon: {fileID: 21300000, guid: 855cc301076a4af43bbacb8768d568c4, type: 3}
+  yardTitle: CHICKENS
 --- !u!65 &1166655091
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32896,6 +32901,7 @@ MonoBehaviour:
   yardIcon: {fileID: 195368364196011872}
   yardCostText: {fileID: 2508120296579459197}
   ticketCostText: {fileID: 1585556148}
+  yardTitle: {fileID: 4511114535100619252}
 --- !u!222 &4511114535100619211
 CanvasRenderer:
   m_ObjectHideFlags: 0

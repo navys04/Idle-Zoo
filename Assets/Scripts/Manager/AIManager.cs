@@ -27,7 +27,8 @@ public class AIManager : SingletonBase<AIManager>
         while (_isGameStarted)
         {
             yield return new WaitForSeconds(timeBetweenSpawn);
-            SpawnNewCustomer();
+            float ticketPrice = PlayerManager.Instance.GetTicketPrice();
+            if (ticketPrice > 0) SpawnNewCustomer();
         }
     }
 
