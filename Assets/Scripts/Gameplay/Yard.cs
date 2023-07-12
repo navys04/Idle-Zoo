@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Manager;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Gameplay
 {
@@ -51,6 +52,8 @@ namespace Gameplay
 
         private void OnMouseDown()
         {
+            if (EventSystem.current.IsPointerOverGameObject()) return;
+            
             UIManager.Instance.OpenYardPanel(this);
         }
 

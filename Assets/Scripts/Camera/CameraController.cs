@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraController : MonoBehaviour
 {
@@ -29,6 +30,8 @@ public class CameraController : MonoBehaviour
 
     private void Scroll()
     {
+        if (EventSystem.current.IsPointerOverGameObject()) return;
+        
         float deltaYPos = scrollSpeed * _vertical * -1;
         float newYPos = Mathf.Clamp(transform.position.y + deltaYPos, edges.x, edges.y);
         
