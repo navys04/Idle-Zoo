@@ -1460,6 +1460,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1713,6 +1717,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_Name
       value: grass2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2620,6 +2628,7 @@ Transform:
   m_Children:
   - {fileID: 353479191}
   - {fileID: 1727901325}
+  - {fileID: 1853491760}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2658,6 +2667,7 @@ MonoBehaviour:
   _level: 0
   yardIcon: {fileID: 21300000, guid: 855cc301076a4af43bbacb8768d568c4, type: 3}
   yardTitle: CHICKENS
+  collider: {fileID: 1853491761}
 --- !u!1001 &269718773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2923,6 +2933,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_Name
       value: grass2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3526,6 +3540,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -3694,6 +3712,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_Name
       value: grass2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5615,6 +5637,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -5825,6 +5851,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_Name
       value: grass2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7557,6 +7587,60 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 590265409}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &600506844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 600506845}
+  - component: {fileID: 600506848}
+  - component: {fileID: 600506846}
+  m_Layer: 0
+  m_Name: Cube (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &600506845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600506844}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.1567016, y: -1.11, z: -3.2243814}
+  m_LocalScale: {x: 7.3526273, y: 1, z: 7.7336583}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 757301828}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &600506846
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600506844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &600506848
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600506844}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &602804934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9018,6 +9102,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -9273,6 +9361,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_Name
       value: grass2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9539,6 +9631,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -9610,6 +9706,60 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 709434347}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &713658463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 713658464}
+  - component: {fileID: 713658467}
+  - component: {fileID: 713658465}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &713658464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713658463}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.198226, y: -1.18, z: -3.2243814}
+  m_LocalScale: {x: 7.3526273, y: 1, z: 7.7336583}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1166655089}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &713658465
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713658463}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &713658467
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713658463}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &736745450
 GameObject:
   m_ObjectHideFlags: 0
@@ -9860,6 +10010,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_Name
       value: grass2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10222,6 +10376,7 @@ Transform:
   m_Children:
   - {fileID: 294980119}
   - {fileID: 1187462496}
+  - {fileID: 600506845}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10260,6 +10415,7 @@ MonoBehaviour:
   _level: 0
   yardIcon: {fileID: 21300000, guid: 855cc301076a4af43bbacb8768d568c4, type: 3}
   yardTitle: CHICKENS
+  collider: {fileID: 600506846}
 --- !u!1001 &759932810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10270,6 +10426,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_Name
       value: grass2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11235,6 +11395,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11613,6 +11777,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11747,6 +11915,7 @@ Transform:
   m_Children:
   - {fileID: 840728890}
   - {fileID: 1064249183}
+  - {fileID: 1362607685}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11785,6 +11954,7 @@ MonoBehaviour:
   _level: 0
   yardIcon: {fileID: 21300000, guid: 855cc301076a4af43bbacb8768d568c4, type: 3}
   yardTitle: CHICKENS
+  collider: {fileID: 1362607686}
 --- !u!1001 &897386409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12465,6 +12635,7 @@ Transform:
   m_Children:
   - {fileID: 172029910}
   - {fileID: 456269735}
+  - {fileID: 2043535514}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12503,6 +12674,7 @@ MonoBehaviour:
   _level: 0
   yardIcon: {fileID: 21300000, guid: 855cc301076a4af43bbacb8768d568c4, type: 3}
   yardTitle: CHICKENS
+  collider: {fileID: 2043535515}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -13206,6 +13378,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -13562,7 +13738,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084038116}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.8, y: -15.67, z: -18.7}
+  m_LocalPosition: {x: 22.8, y: -0.22, z: -18.7}
   m_LocalScale: {x: 7.174695, y: 1, z: 3.1601233}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13831,6 +14007,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -14019,6 +14199,7 @@ Transform:
   m_Children:
   - {fileID: 1066565866}
   - {fileID: 1775354276}
+  - {fileID: 713658464}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14044,6 +14225,7 @@ MonoBehaviour:
   _level: 0
   yardIcon: {fileID: 21300000, guid: 855cc301076a4af43bbacb8768d568c4, type: 3}
   yardTitle: CHICKENS
+  collider: {fileID: 713658465}
 --- !u!65 &1166655091
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14621,6 +14803,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -14961,6 +15147,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -15063,11 +15253,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AgentTypeID: 0
   m_CollectObjects: 0
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 2, z: 0}
+  m_Size: {x: 10, y: 10, z: 26.884638}
+  m_Center: {x: 0, y: 2, z: -8.442319}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 32567
   m_UseGeometry: 0
   m_ignoreTriggers: 1
   m_staticOnly: 1
@@ -15985,6 +16175,60 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1347013611}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1362607684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1362607685}
+  - component: {fileID: 1362607688}
+  - component: {fileID: 1362607686}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1362607685
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362607684}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.168003, y: -1.19, z: -3.2243814}
+  m_LocalScale: {x: 7.3526273, y: 1, z: 7.7336583}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 897073986}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1362607686
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362607684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1362607688
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362607684}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1381010880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16577,6 +16821,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -17087,6 +17335,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_Name
       value: grass2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17688,6 +17940,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_Name
       value: grass2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -19265,6 +19521,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_Name
       value: grass2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -21417,6 +21677,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -22004,6 +22268,60 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1852342364}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1853491759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1853491760}
+  - component: {fileID: 1853491763}
+  - component: {fileID: 1853491761}
+  m_Layer: 0
+  m_Name: Cube (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1853491760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853491759}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.2438736, y: -1.12, z: -3.2243814}
+  m_LocalScale: {x: 7.3526273, y: 1, z: 7.7336583}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 269143616}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1853491761
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853491759}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1853491763
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853491759}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1862971206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23159,6 +23477,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -23778,6 +24100,60 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2039786833}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2043535513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2043535514}
+  - component: {fileID: 2043535517}
+  - component: {fileID: 2043535515}
+  m_Layer: 0
+  m_Name: Cube (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &2043535514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043535513}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.2238731, y: -1.01, z: -3.2243814}
+  m_LocalScale: {x: 7.3526273, y: 1, z: 7.7336583}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 957403903}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2043535515
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043535513}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &2043535517
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043535513}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &2048150570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35051,6 +35427,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -35132,6 +35512,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_Name
       value: grass2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -35217,6 +35601,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -35298,6 +35686,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_Name
       value: grass2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -35383,6 +35775,10 @@ PrefabInstance:
       value: grass2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -35464,6 +35860,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_Name
       value: grass2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e788c551b651420eb8c0e0806e45b87c, type: 3}
       propertyPath: m_StaticEditorFlags

@@ -28,8 +28,13 @@ namespace Gameplay
         [SerializeField] private Sprite yardIcon;
         [SerializeField] private string yardTitle;
 
+        [Header("Other")] 
+        [SerializeField] private Collider collider;
+
         private GameObject _currentYard;
 
+        public Collider GetCollider() => collider;
+        
         public int GetLevel() => _level;
         
         public float GetCurrentPrice() => _currentPrice;
@@ -103,7 +108,8 @@ namespace Gameplay
             
             if (!newAnimal) return;
             _currentYard = Instantiate(newAnimal.gameObject, transform.position, transform.rotation, transform);
-
+            _currentYard.GetComponent<Animal>().parentYard = this;
+            
             _currentAnimalIndex = animals.IndexOf(newAnimal);
             print(_currentAnimalIndex);
         }
