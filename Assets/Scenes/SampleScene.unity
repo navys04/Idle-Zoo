@@ -2657,6 +2657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf4b11b20ea45894cae907ded2c98dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priceToBuyYard: 25
   basePrice: 10
   currentPriceMultiplier: 0.2
   baseTicketPrice: 10
@@ -10405,6 +10406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf4b11b20ea45894cae907ded2c98dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priceToBuyYard: 0
   basePrice: 10
   currentPriceMultiplier: 0.2
   baseTicketPrice: 10
@@ -11944,6 +11946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf4b11b20ea45894cae907ded2c98dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priceToBuyYard: 25
   basePrice: 10
   currentPriceMultiplier: 0.2
   baseTicketPrice: 10
@@ -12664,6 +12667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf4b11b20ea45894cae907ded2c98dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priceToBuyYard: 25
   basePrice: 10
   currentPriceMultiplier: 0.2
   baseTicketPrice: 10
@@ -14215,6 +14219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf4b11b20ea45894cae907ded2c98dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priceToBuyYard: 25
   basePrice: 10
   currentPriceMultiplier: 0.2
   baseTicketPrice: 10

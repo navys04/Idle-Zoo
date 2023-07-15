@@ -13,14 +13,18 @@ public class Customer : MonoBehaviour
     
     private NavMeshAgent _agent;
     private AIManager _aiManager;
+    private Animator _animator;
 
     private float _distanceToShop;
     private float _distanceToEndPoint;
+    
+    private static readonly int IsMoving = Animator.StringToHash("IsMoving");
 
     private void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
         _aiManager = AIManager.Instance;
+        _animator = GetComponentInChildren<Animator>();
 
         StartCoroutine(GoToShop());
     }
@@ -28,8 +32,6 @@ public class Customer : MonoBehaviour
     private void Update()
     {
         _distanceToShop = Vector3.Distance(transform.position, _aiManager.GetShopPosition().position);
-        if (_distanceToShop < minimalDistToShop) print("check check");
-        
         _distanceToEndPoint = Vector3.Distance(transform.position, _aiManager.GetEndPosition().position);
     }
 
@@ -38,8 +40,9 @@ public class Customer : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         
         _agent.SetDestination(_aiManager.GetShopPosition().position);
-        
+        _animator.SetBool(IsMoving, true);
         yield return new WaitWhile(() => _distanceToShop >= minimalDistToShop);
+        _animator.SetBool(IsMoving, false);
         yield return new WaitForSeconds(timeWaitingInShop);
         StartCoroutine(GoToEndPoint());
     }
@@ -50,6 +53,7 @@ public class Customer : MonoBehaviour
         playerManager.AddCoinsForTickets(playerManager.GetTicketPrice());
         
         _agent.SetDestination(_aiManager.GetEndPosition().position);
+        _animator.SetBool(IsMoving, true);
         print("Going to endPoint");
         print(_distanceToShop);
 

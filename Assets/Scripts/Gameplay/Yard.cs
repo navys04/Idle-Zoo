@@ -9,7 +9,7 @@ namespace Gameplay
 {
     public class Yard : MonoBehaviour
     {
-        [Header("Price")]
+        [Header("Price")] [SerializeField] private float priceToBuyYard = 25.0f;
         [SerializeField] private float basePrice = 10.0f;
         [SerializeField] private float currentPriceMultiplier = 0.2f;
 
@@ -52,6 +52,7 @@ namespace Gameplay
         
         private void Start()
         {
+            if (_level == 0) _currentPrice = priceToBuyYard;
             if (_level > 0) SpawnNewAnimalsInYard(_level);
         }
 
